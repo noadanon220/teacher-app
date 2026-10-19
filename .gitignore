@@ -1,0 +1,13 @@
+# Python
+venv/
+__pycache__/
+
+# Database (recreate with: python seed.py)
+*.db
+
+# Node
+node_modules/
+dist/
+
+# macOS
+.DS_Store

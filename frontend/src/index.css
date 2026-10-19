@@ -1,0 +1,240 @@
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --text: #2a2d3a;
+  --muted: #8a8f9e;
+  --primary: #3b82f6;
+  --primary-dark: #2f6fdb;
+  --border: #e2e4ea;
+  --error: #d6336c;
+  --success: #2b9348;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- Login screen ---------- */
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.brand {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 520px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 48px 40px;
+}
+
+.subtitle {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.title {
+  margin: 0 0 36px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.field {
+  display: block;
+  width: 100%;
+  height: 52px;
+  margin-bottom: 18px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fff;
+  color: var(--text);
+}
+
+.field::placeholder {
+  color: var(--muted);
+}
+
+.field:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 52px;
+  margin-top: 18px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+/* ---------- Students screen ---------- */
+.page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+h1 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+header h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--primary-dark);
+}
+
+button.secondary {
+  background: #fff;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+button.secondary:hover {
+  background: var(--bg);
+}
+
+button.small {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.error {
+  color: var(--error);
+  margin: 0 0 4px;
+  font-size: 0.95rem;
+}
+
+.success {
+  color: var(--success);
+  margin: 12px 0 0;
+}
+
+.muted {
+  color: var(--muted);
+  text-align: center;
+  margin: 8px 0;
+}
